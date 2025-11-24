@@ -1,31 +1,45 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Приглашение на юбилей</title>
-  <style>
-    body {
-      width: 90%;
-      max-width: 420px;
-      display: grid;
-      place-items: center;
-      margin: 0;
-      font-family: 'Poppins', Arial, sans-serif;
-      background-position: top;
-      background-image: url('img/fon.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #333;
-      min-height: 100vh;
-    }
-    .fon1 {
-      width: 400px;
-      border-radius: 20px;
-      display: block;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+  <meta name="description" content="Маркова Мария" /> 
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:url" content="" /> 
+  <meta property="og:title" content="Саҥа дьыл" /> 
+  <meta property="og:description" content="Маркова Мария" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:image" content="" /> 
+  <meta property="og:image:type"  content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">  
 
+  <style>
+    body {    
+        margin: auto;
+        z-index: 1; 
+        width: 600px;              
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .back
+    {
+        top: -30px;
+        z-index: -1;
+        position: fixed;
     }
 
     .card {
@@ -41,63 +55,23 @@
       display: none; /* изначально скрыт */
       animation: fadeIn 0.8s ease forwards;
     }
-
-    .header {
-      margin-top: 50px;
-      padding: 40px 20px;
-      color: black;
-      font-size: 24px;
-      font-weight: 500;
-    }
-
-    .content {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    .highlight {
-      color: #e91e63;
-      font-weight: bold;
-    }
-
-    .date {
-      margin-top: 50px;
-      font-size: 18px;
-      padding: 10px;
-      border-radius: 12px;
-      margin-bottom: 50px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #2fad00;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 16px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .ebee {
-      position: relative;
-      margin-top: 100px;
-      width: 250px;
-      left: -30px;
+    .fon1 {
+      margin-top: 50%;
+      width: 400px;
+      border-radius: 20px;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
 
     }
     .krug{
       width: 380px;
-      position: absolute;
-      left: 20px;
-      top: 70px;
+      background-image: url("img/ebee.jpg");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 100%;
+      margin-left: 0px;
     }
     .kal {
       width: 320px;
@@ -105,63 +79,194 @@
       border: solid, black, 1px;
       margin-bottom: 20px;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    .content
+    {
+      margin-top: 30px;
+    }
+    .invite{
+      font-size: 25px;
+    }
+    .slova{
+      font-size: 18px;
+    }
+    .date{
+      margin-top: 50px;
+    }
+    .date1{
+      margin-top: -20px;
+    }
+    .mesto {
+      width: 100%;
+      max-width: 360px;
+      padding: 18px 0px;
+      margin-top: 50px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      font-family: "Inter", Arial, sans-serif;
+      color: #222;
+      line-height: 1.45;
     }
 
+    .mesto .buolar {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+      color: #6b7280;
+    }
 
+    .mesto b {
+      font-size: 15px;
+      display: block;
+      margin-bottom: 12px;
+    }
 
+    .mesto .button {
+      display: inline-block;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #2fad00;
+      color: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .mesto .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+    }
+    .spund{
+        transform:rotate(0deg);
+        opacity: 1;
+        position: fixed;
+        right: 10px;
+        border: none;
+        background: none;
+    }
+    .asd{
+      position: relative;
+    }
+
+    
   </style>
-</head>
+</head>   
+
+
 <body>
+  <audio id="aud" > <source src="music.mp3">  </audio>
+  <div class="back"> <img  src="img/fon.jpg" height="100%">  </div>
+
+  <div id="photo2" class="asd">
+    <button class="spund" id="mute" type="button">
+      <img src="no_mute1.png" alt="Иконка" width="40" height="40">
+    </button> 
+    <button class="spund" id="unmute" type="button">
+      <img src="mute1.png" alt="Иконка" width="40" height="40">
+    </button>
+  </div>
+  
+
   <div class="convert">
     <img class="fon1" src="img/convert4.gif" alt="Открыть приглашение" id="openBtn">
   </div>
 
   <div class="card" id="cardBlock">
-   <div>
-    <img class="ebee" src="img/babushka-Photoroom.png">
-    <img class="krug" src="img/krug4-no-bg-preview (carve.photos).png">
-   </div>
-    <div class="header">
-      Үбүлүөйгэ ынырыы сурук
+    <div class="photo">
+      <img class="krug" src="img/krug4-no-bg-preview (carve.photos).png">
     </div>
+
     <div class="content">
-      Умнубакка саныыр <br>
-Уруу-аймах дьонум,<br>
-Күлэ-үөрэ көрсөр<br>
-Күндү доҕотторум,<br>
-Үлэ Үөһүгэр алтыспыт<br>
-Үтүө дьонум,<br>
-85 сааспын бэлиэтиир<br>
-Үбүлүөйдүүр күммэр<br>
-Үөрүүбүн үллэстэ<br>
-Кэлиҥ, сылдьыҥ,<br>
-ыалдыыттааҥ!<br>
+      <p class="invite">Үбүлүөйгэ ынырыы сурук</p>      
+      <p class="slova">
+        Умнубакка саныыр <br>
+        Уруу-аймах дьонум,<br>
+        Күлэ-үөрэ көрсөр<br>
+        Күндү доҕотторум,<br>
+        Үлэ Үөһүгэр алтыспыт<br>
+        Үтүө дьонум,<br>
+        85 сааспын бэлиэтиир<br>
+        Үбүлүөйдүүр күммэр<br>
+        Үөрүүбүн үллэстэ<br>
+        Кэлиҥ, сылдьыҥ,<br>
+        ыалдыыттааҥ!<br>
+      </p>  
+      
+
       <div class="date">
-        <img class="kal" src="img/kal2.jpeg" alt="">
-        <br>6 декабря 2025 года, 18:00<br>
+        <img class="kal" src="img/kal2.jpeg">
+        <p class="date1">6 декабря 2025 года, 18:00</p>
+      </div>
+
+      <div class="mesto">
+        <p class="buolar">Буолар сирэ: </p> 
+        <b>Ресторан «Муус Хайа», ул. Петровского, 13</b>
+        <a href="https://go.2gis.com/z8o9J" class="button">2ГИС картаҕа</a>
       </div>
       
-      Буолар сирэ: <br>
-      <b>Ресторан «Муус Хайа», ул. Петровского, 13</b>
-
     </div>
 
-    <a href="https://go.2gis.com/z8o9J" class="button">2ГИС картаҕа</a>
+    
   </div>
 
   <script>
     const openBtn = document.getElementById('openBtn');
     const cardBlock = document.getElementById('cardBlock');
     const convertBlock = document.querySelector('.convert');
+    const audio = document.getElementById('aud');
+    const muteBtn = document.getElementById('mute');
+    const unmuteBtn = document.getElementById('unmute');
+
 
     openBtn.addEventListener('click', () => {
+      audio.play();
+      muteBtn.hidden = false;
+      unmuteBtn.hidden = true;
       convertBlock.style.display = 'none'; // скрыть конверт
       cardBlock.style.display = 'block';   // показать открытку
     });
-  </script>
+
+
+  // ГРОМКОСТЬ (от 0 до 1)
+  audio.volume = 0.1; 
+
+  muteBtn.hidden = true;
+
+  muteBtn.onclick = function() {
+    audio.pause();
+    muteBtn.hidden = true;
+    unmuteBtn.hidden = false;
+  };
+
+  unmuteBtn.onclick = function() {
+    audio.play();
+    muteBtn.hidden = false;
+    unmuteBtn.hidden = true;
+  };
+</script>
+
+<script>
+  const audio = document.getElementById('aud');
+  const muteBtn = document.getElementById('mute');
+  const unmuteBtn = document.getElementById('unmute');
+
+  // Изначально: mute скрыт, unmute показан
+  muteBtn.hidden = true;
+
+  // Нажали mute → музыка паузится → показать кнопку unmute
+  muteBtn.onclick = function() {
+    audio.pause();
+    muteBtn.hidden = true;
+    unmuteBtn.hidden = false;
+  };
+
+  // Нажали unmute → музыка играет → показать кнопку mute
+  unmuteBtn.onclick = function() {
+    audio.play();
+    muteBtn.hidden = false;
+    unmuteBtn.hidden = true;
+  };
+
+</script>
+
 </body>
 </html>

@@ -25,93 +25,130 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">  
 
-<style>
-body {
-margin: 0 auto;
-padding: 0;
-width: 100%;
-max-width: 420px; /* адаптация под телефон */
-display: flex;
-justify-content: center;
-position: relative;
-}
-.back {
-top: 0;
-z-index: -1;
-position: fixed;
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
+  <style>
+    body {    
+        margin: auto;
+        z-index: 1; 
+        width: 80%;              
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .back
+    {
+        top: -30px;
+        z-index: -1;
+        position: fixed;
+    }
 
+    .card {
+      width: 90%;
+      max-width: 420px;
+      background: none;
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      padding: 24px;
+      box-sizing: border-box;
+      margin: auto;
+      display: none; /* изначально скрыт */
+      animation: fadeIn 0.8s ease forwards;
+    }
+    .fon1 {
+      margin-top: 50%;
+      width: 400px;
+      border-radius: 20px;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
 
-.card {
-width: 100%;
-max-width: 360px;
-background: none;
-border-radius: 20px;
-overflow: hidden;
-text-align: center;
-padding: 16px;
-margin: auto;
-display: none;
-animation: fadeIn 0.8s ease forwards;
-}
-.fon1 {
-margin-top: 40%;
-width: 90%;
-max-width: 320px;
-border-radius: 20px;
-cursor: pointer;
-transition: transform 0.3s ease;
-}
-.krug {
-width: 85%;
-max-width: 300px;
-border-radius: 50%;
-background-size: cover;
-margin: 0 auto;
-display: block;
-}
-.kal {
-width: 85%;
-max-width: 260px;
-border-radius: 14px;
-margin-bottom: 16px;
-}
-.invite { font-size: 22px; }
-.slova { font-size: 16px; }
+    }
+    .krug{
+      width: 250px;
+      background-image: url("img/ebee.jpg");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 100%;
+      margin-left: 0px;
+    }
+    .kal {
+      width: 250px;
+      border-radius: 20px;
+      border: solid, black, 1px;
+      margin-bottom: 20px;
+    }
+    .content
+    {
+      margin-top: 30px;
+    }
+    .invite{
+      font-size: 25px;
+    }
+    .slova{
+      font-size: 18px;
+    }
+    .date{
+      margin-top: 50px;
+    }
+    .date1{
+      margin-top: -20px;
+    }
+    .mesto {
+      width: 100%;
+      max-width: 360px;
+      padding: 18px 0px;
+      margin-top: 50px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      font-family: "Inter", Arial, sans-serif;
+      color: #222;
+      line-height: 1.45;
+    }
 
+    .mesto .buolar {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+      color: #6b7280;
+    }
 
-.mesto {
-width: 100%;
-max-width: 300px;
-padding: 14px;
-background: #ffffff;
-border-radius: 14px;
-margin: 32px auto 0 auto;
-box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
-.mesto b { font-size: 14px; }
-.mesto .button {
-display: inline-block;
-padding: 10px 14px;
-font-size: 14px;
-background: #2fad00;
-border-radius: 10px;
-color: #fff;
-text-decoration: none;
-}
+    .mesto b {
+      font-size: 15px;
+      display: block;
+      margin-bottom: 12px;
+    }
 
+    .mesto .button {
+      display: inline-block;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #2fad00;
+      color: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
 
-.spund {
-position: fixed;
-right: 10px;
-top: 10px;
-border: none;
-}
-</style>
+    .mesto .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+    }
+    .spund{
+        transform:rotate(0deg);
+        opacity: 1;
+        position: fixed;
+        right: 10px;
+        border: none;
+        background: none;
+    }
+    .asd{
+      position: relative;
+    }
 
+    
+  </style>
 </head>   
 
 
